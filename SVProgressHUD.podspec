@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name     = 'SVProgressHUD'
-  s.version  = '2.3.1'
+  s.version  = '3.0.0'
   s.ios.deployment_target = '12.0'
   s.tvos.deployment_target = '12.0'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A clean and lightweight progress HUD for your iOS and tvOS app.'
-  s.homepage = 'https://github.com/SVProgressHUD/SVProgressHUD'
+  s.homepage = 'https://github.com/Cubigo/SVProgressHUD'
   s.authors   = { 'Sam Vermette' => 'hello@samvermette.com', 'Tobias Totzek' => 'tobias@totzek.me' }
-  s.source   = { :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/Cubigo/SVProgressHUD.git', :tag => s.version.to_s }
 
   s.description = 'SVProgressHUD is a clean and easy-to-use HUD meant to display the progress of an ongoing task on iOS and tvOS. The success and error icons are from Freepik from Flaticon and are licensed under Creative Commons BY 3.0.'
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files = 'SVProgressHUD/*.{h,m}'
     core.resources = ['SVProgressHUD/SVProgressHUD.bundle']
-    core.resource_bundles = {'SVProgressHUD' => ['SVProgressHUD/PrivacyInfo.xcprivacy']}
+    core.resource_bundles = {'SVProgressHUD_Privacy' => ['SVProgressHUD/PrivacyInfo.xcprivacy']}
   end
 
   s.subspec 'AppExtension' do |ext|
